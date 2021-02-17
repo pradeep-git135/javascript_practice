@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>select tag</title>
+    <script>
+        function fxn(){
+            let select = document.getElementById("select1")
+            alert("the selected index is "+ select.options[select.selectedIndex].value)
+        }
+    </script>
+</head>
+<body>
+    <select id="select1">
+        <option value="a">a</option>
+        <option value="b">b</option>
+        <option value="c">c</option>
+        <option value="d">d</option>
+    </select><br><br>
+    <button onclick="fxn()">click</button>
+</body>
+</html>

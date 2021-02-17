@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>taking input from radio button</title>
+    <script>
+        function fcn(){
+            let first = document.getElementById("rd1")
+            let second = document.getElementById("rd2")
+            if(first.checked==true){
+                alert("you have selected the first")
+            }
+            else if(second.checked==true){
+                alert("you have selected the second")
+            }
+            else{
+                alert("you have not selected yet")
+            }            
+        }
+    </script>
+</head>
+<body>
+    <input id="rd1" type="radio" name="n1">first</input>
+    <br> <br>
+    <input id="rd2" type="radio" name="n1">second</input>
+    <br><br>
+    <button onclick="fcn()">click</button>
+</body>
+</html>
